@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/components/header.css">
+    <script src="/components/header.js"></script>
+    <link rel="stylesheet" href="/components/footer.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cardTitleList = document.querySelectorAll('.title-container');
+
+        cardTitleList.forEach((i) => {
+          i.addEventListener('click', () => {
+            i.parentNode.classList.toggle('expanded');
+            console.log('rodeui')
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="wide-wrapper pd-sides">
+        <div id="logo-container">
+            <a href="/">
+                <span id="logo-btn"></span>
+            </a>
+        </div>
+        <nav id="header-nav" class="mobile">
+            <ul class="pd-sides">
+                <li><a href="#" class="active">INÍCIO</a></li>
+                <li><a href="/pages/contact.html">ATENDIMENTO</a></li>
+                <li><a href="/pages/about.html">QUEM SOMOS</a></li>
+            </ul>
+        </nav>
+        <div id="header-items">
+            <section id="header-controls">
+                <form id="search-widget" action="/buscar" method="GET">
+                    <input type="search" id="buscar" placeholder="Pesquisar..." />
+                    <button type="submit">🔎</button>
+                </form>
+                <section id="header-hamb-menu" class="btn">
+                    <img src="/resources/Hamburger.svg">
+                </section>
+            </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article id="banner" class="pd-sides">
+        <h1>A indústria Capixaba passa por aqui!</h1>
+        <a href="/pages/about.html"><span>Sobre o SENAI</span><span><img src="/resources/left-arrow.svg"></span></a>
+      </article>
+      <article id="courses-place" class="pd-sides">
+        <h2>Cursos por unidade</h2>
+        <section id="places-container">
+
+          <section class="place-card expanded">
+            <div class="title-container">
+              <h3 class="title">SENAI VITÓRIA</h3>
+              <span class="control-symbol"></span>
+            </div>
+            <section class="especialidades-container">
+              <h4>Especialidades</h4>
+              <ul>
+                <li>Elétrica</li>
+                <li>Eletrônica</li>
+                <li>Informática</li>
+                <li>Mecânica Automotiva</li>
+                <li>Mecânica Industrial</li>
+              </ul>
+              <a href="#">Ver cursos oferecidos</a>
+            </section>
+            <section class="footer">
+              <a href="/pages/about.html">Informações de contato</a>
+            </section>
+          </section>
+
+          <section class="place-card">
+            <div class="title-container">
+              <h3 class="title">SENAI VITÓRIA</h3>
+              <span class="control-symbol"></span>
+            </div>
+            <section class="especialidades-container">
+              <h4>Especialidades</h4>
+              <ul>
+                <li>Elétrica</li>
+                <li>Eletrônica</li>
+                <li>Informática</li>
+                <li>Mecânica Automotiva</li>
+                <li>Mecânica Industrial</li>
+              </ul>
+              <a href="#">Ver cursos oferecidos</a>
+            </section>
+            <section class="footer">
+              <a href="/pages/about.html">Informações de contato</a>
+            </section>
+          </section>
+
+          <section class="place-card">
+            <div class="title-container">
+              <h3 class="title">SENAI VITÓRIA</h3>
+              <span class="control-symbol"></span>
+            </div>
+            <section class="especialidades-container">
+              <h4>Especialidades</h4>
+              <ul>
+                <li>Elétrica</li>
+                <li>Eletrônica</li>
+                <li>Informática</li>
+                <li>Mecânica Automotiva</li>
+                <li>Mecânica Industrial</li>
+              </ul>
+              <a href="#">Ver cursos oferecidos</a>
+            </section>
+            <section class="footer">
+              <a href="/pages/about.html">Informações de contato</a>
+            </section>
+          </section>
+        </section>
+      </article>
+
+      <article id="popular-courses" class="pd-sides">
+        <div class="wide-wrapper">
+          <div class="title">
+            <h2>Principais cursos</h2>
+            <a href="/pages/course.html" class="btn"><img src="/resources/left-arrow.svg"></a>
+          </div>
+          <div id="courses-wrapper">
+            <div id="courses-container">
+              <section class="course-card">
+                <a href="/pages/course.html" class="course-info-wrapper">
+                  <div class="thumbnail">
+                    <img src="/resources/course-img.jpg" alt="" class="course-img">
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h3>Téc. em Eletrotécnica</h3>
+                    </div>
+                    <div class="categories-container">
+                      <ul class="categories">
+                        <li class="main">Elétrica</li>
+                        <li class="secondary">Formação técnica</li>
+                      </ul>
+                    </div>
+                    <div class="desc">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </div>
+                  </div>
+                </a>
+              </section>
+  
+              <section class="course-card">
+                <a href="/pages/course.html" class="course-info-wrapper">
+                  <div class="thumbnail">
+                    <img src="/resources/course-img.jpg" alt="" class="course-img">
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h3>Téc. em Eletrotécnica</h3>
+                    </div>
+                    <div class="categories-container">
+                      <ul class="categories">
+                        <li class="main">Elétrica</li>
+                        <li class="secondary">Formação técnica</li>
+                      </ul>
+                    </div>
+                    <div class="desc">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </div>
+                  </div>
+                </a>
+              </section>
+  
+              <section class="course-card">
+                <a href="/pages/course.html" class="course-info-wrapper">
+                  <div class="thumbnail">
+                    <img src="/resources/course-img.jpg" alt="" class="course-img">
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h3>Téc. em Eletrotécnica</h3>
+                    </div>
+                    <div class="categories-container">
+                      <ul class="categories">
+                        <li class="main">Elétrica</li>
+                        <li class="secondary">Formação técnica</li>
+                      </ul>
+                    </div>
+                    <div class="desc">
+                      Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </div>
+                  </div>
+                </a>
+              </section>
+  
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="contact" class="pd-sides">
+        <div class="wide-wrapper">
+          <h2 class="title">Atendimento ao cliente</h2>
+          <div id="contact-info-wrapper">
+            <div class="img-wrapper">
+              <img src="/resources/sac.jpeg">
+            </div>
+            <div class="parag">
+              <p>Para sanar dúvidas ou obter mais informações sobre determinado curso, entre em contato nos envie uma mensagem.</p>
+            </div>
+          </div>
+          <section class="btn-wrapper">
+            <a href="/pages/contact.html" class="btn">Enviar mensagem</a>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="pd-sides">
+      <section id="footer-wrapper">
+        <section id="footer-banner">
+          <img src="/resources/Logo-SENAI.svg">
+        </section>
+        <div id="footer-content-wrapper">
+          <section id="footer-content-container">
+  
+            <section class="footer-content">
+              <div class="title-container">
+                <h2 class="title">Acesso Rápido</h2>
+              </div>
+              <ul class="">
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Unidades</a></li>
+              </ul>
+            </section>
+            <section class="footer-content">
+              <div class="title-container">
+              <h2 class="title">Cursos Oferecidos</h2>
+              </div>
+              <ul class="">
+                <li><a href="#">Elétrica</a></li>
+                <li><a href="#">Eletrônica</a></li>
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Mecânica Automotiva</a></li>
+                <li><a href="#">Mecânica Industrial</a></li>
+              </ul>
+            </section>
+            <section class="footer-content">
+              <div class="title-container">
+                <h2 class="title">SAC</h2>
+              </div>
+              <ul class="">
+                <li>Telefone: 0800-100-0880</li>
+                <li>WhatsApp: 27 99841-2270</li>
+                <li></li>
+              </ul>
+            </section>
+  
+          </section>
+        </div>
+      </section>
+      <section id="footer-copyright">
+        <span>© 2025 SENAI</span>
+        <span>Desenvolvido por Thiago Moura Baiense</span>
+        <span>Todos os direitos livres HUEHUEBRBR</span>
+      </section>
+    </footer>
+  </body>
+</html>

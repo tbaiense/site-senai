@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after,
+form,
+input,
+input:focus
+button,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: initial;
+    border: initial;
+    line-height: 1em;
+    font-family: sans-serif;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+
+body {
+    min-width: 345px;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 1rem;
+    font-weight: normal;
+}

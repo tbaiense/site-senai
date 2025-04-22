@@ -1,0 +1,24 @@
+main {
+    min-height: 200vh;
+    background-image: linear-gradient(to bottom, white, black);
+}
+
+header, footer {
+    border: 0.2rem solid rebeccapurple;
+}
+
+div, section {
+    background-color: salmon;
+    border: 0.3rem solid blue;
+    /* margin: 0.4rem; */
+}
+
+img {
+    background-color: aliceblue;
+    border: 0.1rem dashed orange;
+}
+
+nav {
+    background-color: aliceblue;
+    border: 0.5rem dotted pink;
+}

@@ -1,0 +1,25 @@
+html {
+    min-width: 200px;
+    overflow: auto;
+}
+
+main {
+    min-height: 10vh;
+    background-color: #eee;
+}
+
+.pd-sides {
+    padding-inline: 1.5em;
+}
+
+@media screen and (min-width: 60rem) {
+    .wide-wrapper {
+        max-width: 70rem;
+        margin-inline: auto;
+    }
+}
+
+a.btn {
+    text-decoration: none;
+    color: initial;
+}
