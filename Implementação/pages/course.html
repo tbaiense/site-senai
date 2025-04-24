@@ -2,11 +2,100 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/components/header.css">
+    <script src="/components/header.js"></script>
+    <link rel="stylesheet" href="/components/footer.css">
+    <link rel="stylesheet" href="course.html">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header id="main-header">
+      <div class="wide-wrapper pd-sides">
+        <div id="logo-container">
+            <a href="/">
+                <span id="logo-btn"></span>
+            </a>
+        </div>
+        <nav id="header-nav" class="mobile">
+            <ul class="pd-sides">
+                <li><a href="/index.html">INÍCIO</a></li>
+                <li><a href="/pages/contact.html">ATENDIMENTO</a></li>
+                <li><a href="/pages/about.html">QUEM SOMOS</a></li>
+            </ul>
+        </nav>
+        <div id="header-items">
+            <section id="header-controls">
+                <form id="search-widget" action="/buscar" method="GET">
+                    <input type="search" id="buscar" placeholder="Pesquisar..." />
+                    <button type="submit">🔎</button>
+                </form>
+                <section id="account-button" class="btn">
+                  <a href="/pages/login.html">
+                      <img src="/resources/account-icon.svg">
+                  </a>
+              </section>
+                <section id="header-hamb-menu" class="btn">
+                    <img src="/resources/Hamburger.svg">
+                </section>
+            </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      
+    </main>
+    <footer class="pd-sides">
+      <section id="footer-wrapper">
+        <section id="footer-banner">
+          <img src="/resources/Logo-SENAI.svg">
+        </section>
+        <div id="footer-content-wrapper">
+          <section id="footer-content-container">
+  
+            <section class="footer-content">
+              <div class="title-container">
+                <h2 class="title">Acesso Rápido</h2>
+              </div>
+              <ul class="">
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Unidades</a></li>
+              </ul>
+            </section>
+            <section class="footer-content">
+              <div class="title-container">
+              <h2 class="title">Cursos Oferecidos</h2>
+              </div>
+              <ul class="">
+                <li><a href="#">Elétrica</a></li>
+                <li><a href="#">Eletrônica</a></li>
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Mecânica Automotiva</a></li>
+                <li><a href="#">Mecânica Industrial</a></li>
+              </ul>
+            </section>
+            <section class="footer-content">
+              <div class="title-container">
+                <h2 class="title">SAC</h2>
+              </div>
+              <ul class="">
+                <li>Telefone: 0800-100-0880</li>
+                <li>WhatsApp: 27 99841-2270</li>
+                <li></li>
+              </ul>
+            </section>
+  
+          </section>
+        </div>
+      </section>
+      <section id="footer-copyright">
+        <span>© 2025 SENAI</span>
+        <span>Desenvolvido por Thiago Moura Baiense</span>
+        <span>Todos os direitos livres HUEHUEBRBR</span>
+      </section>
+    </footer>
   </body>
 </html>

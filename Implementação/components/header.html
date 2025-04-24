@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Header component</title>
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="header.css" />
 
     <!-- APENAS PARA TESTE! NÃO COPIAR!-->
@@ -11,32 +12,37 @@
     <script src="header.js"></script>
 </head>
 <body>
-    <header id="main-header" class="pd-sides">
-        <div id="logo-container">
-            <a href="/">
-                <span id="logo-btn"></span>
-            </a>
-        </div>
-        <nav id="header-nav" class="mobile">
-            <ul class="pd-sides">
-                <li><a href="#" class="active">INÍCIO</a></li>
-                <li><a href="/pages/contact.html">ATENDIMENTO</a></li>
-                <li><a href="/pages/about.html">QUEM SOMOS</a></li>
-            </ul>
-        </nav>
-        <div id="header-items">
-            <section id="header-controls">
-                <form id="search-widget" action="./buscar" method="GET">
-                    <input type="search" id="buscar" placeholder="Pesquisar..." />
-                    <button type="submit">🔎</button>
-                </form>
-                <section id="header-hamb-menu" class="btn">
-                    <img src="/resources/Hamburger.svg">
+    <header id="main-header">
+        <div class="wide-wrapper pd-sides">
+          <div id="logo-container">
+              <a href="/">
+                  <span id="logo-btn"></span>
+              </a>
+          </div>
+          <nav id="header-nav" class="mobile">
+              <ul class="pd-sides">
+                  <li><a href="#" class="active">INÍCIO</a></li>
+                  <li><a href="/pages/contact.html">ATENDIMENTO</a></li>
+                  <li><a href="/pages/about.html">QUEM SOMOS</a></li>
+              </ul>
+          </nav>
+          <div id="header-items">
+              <section id="header-controls">
+                  <form id="search-widget" action="/buscar" method="GET">
+                      <input type="search" id="buscar" placeholder="Pesquisar..." />
+                      <button type="submit">🔎</button>
+                  </form>
+                  <section id="account-button" class="btn">
+                    <a href="/pages/login.html">
+                        <img src="/resources/account-icon.svg">
+                    </a>
                 </section>
-            </section>
+                  <section id="header-hamb-menu" class="btn">
+                      <img src="/resources/Hamburger.svg">
+                  </section>
+              </section>
+          </div>
         </div>
       </header>
-    <main></main>
-    <footer></footer>
 </body>
 </html>
