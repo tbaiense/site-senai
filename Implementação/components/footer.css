@@ -3,15 +3,15 @@
 }    
 
 footer {
+    position: relative;
     background-color: #696969;
     padding-block: 2rem;
     color: white;
+    z-index: 9;
 }
 
 
 #footer-banner {
-    position: relative;
-    z-index: 1;
     background-color: white;
     border-radius: 0.6rem;
 }

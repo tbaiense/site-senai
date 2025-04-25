@@ -186,6 +186,7 @@ main > article h2 {
     flex-shrink: 1;
     max-width: 10em;
     align-self: stretch;
+    overflow: hidden;
 }
 
 .course-card .thumbnail img {

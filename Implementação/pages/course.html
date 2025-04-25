@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/components/header.css">
     <script src="/components/header.js"></script>
     <link rel="stylesheet" href="/components/footer.css">
-    <link rel="stylesheet" href="course.html">
+    <link rel="stylesheet" href="course.css">
   </head>
   <body>
     <header id="main-header">
@@ -45,7 +45,95 @@
       </div>
     </header>
     <main>
+      <section id="course-info-header" class="pd-sides">
+        <span id="header-back">
+          <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          </a>
+        </span>
+        <span id="course-title">Técnico em Eletrotécnica</span>
+        <span id="header-fav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </span>
+      </section>
+      <section id="course-image" class="mg-sides">
+        <img src="/resources/curso-img.jpg" alt="Foto do curso">
+      </section>
+      <section id="course-info" class="pd-sides">
+        <h2>Sobre o curso</h2>
+        <ul class="spread-list">
+          <li><span class="left">Cidade: </span><span class="right">Vitória</span></li>
+          <li><span class="left">Duração: </span><span class="right">1200 horas</span></li>
+          <li><span class="left">Turno: </span><span class="right">Matutino</span></li>
+          <li><span class="left">Modalidade: </span><span class="right">Presencial</span></li>
+          <li><span class="left">Data de início: </span><span class="right"><time datetime="2026-01-09">09 jan. 2026</time></span></li>
+        </ul>
+        <p id="price-info">
+          <strong>18x R$ 416,66</strong><br>
+          R$ 7499,99<br>
+          + Matrícula
+        </p>
+        <form action="/pages/contact.html" method="get" class="btn rounded">
+          <button id="signup" class="" type="submit" name="solicitar-matricula" value="tec-eletrotecnica">Solicitar matrícula</button>
+        </form>
+      </section>
       
+      <section id="course-details">
+        <h2 class="btn rounded">Detalhes</h2>
+        <section class="pd-sides">
+          <h3>Objetivo</h3>
+          <p>O curso Técnico em Eletrotécnica têm como objetivos instalar, manter e projetar sistemas elétricos prediais, industriais e de potência, cumprindo legislações vigentes, parâmetros de eficiência energética, normas técnicas, de qualidade, de segurança e saúde e, ainda, ambientais.</p>
+        </section>
+        <section class="pd-sides">
+          <h3>Requisitos do curso</h3>
+          <ul>
+            <li>Ter idade mínima de 16 anos completos;</li>
+            <li>Estar matriculado no 2º ano do ensino médio ou ter concluído o ensino médio;</li>
+            <li>OU estar matriculado na Educação de Jovens e Adultos (EJA) nível médio ou ter sido aprovado em disciplinas de exames de massa de nível médio;</li>
+            <li>Ter acesso à internet.</li>
+          </ul>
+        </section>
+        <section class="pd-sides">
+          <h3>Documentos necessários para matrícula</h3>
+          <li>RG, CNH ou Carteira de Trabalho (páginas correspondentes a identificação);</li>
+          <li>CPF;</li>
+          <li>Título de Eleitor e comprovante da última votação;</li>
+          <li>Certificado de reservista para brasileiro que complete 19 anos e até 45 anos de idade entre 1º de janeiro e 31 de dezembro do ano em que efetivar a matrícula;</li>
+          <li>Comprovante de residência atualizado (contas com CEP recebidas nos últimos 3 meses preferencialmente entregue pelos Correios);</li>
+          <li>Guarda Judicial - caso menor de 18 anos e não resida com os responsáveis legais;</li>
+          <li>Histórico Escolar do Ensino Médio - para quem já concluiu o Ensino Médio;</li>          
+          <li>Declaração de Matrícula na escola regular comprovando matrícula na 2ª ou 3ª série do Ensino Médio original – para quem não concluiu o Ensino Médio;</li>
+          <li>Cartão de Vacina (Páginas identificação e vacinação) para MENORES de 18 ANOS.</li>
+        </section>
+        <section id="course-subjects" class="pd-sides">
+          <h3>Conteúdos</h3>
+          <li>Desenho Técnico Aplicado à Projetos Elétricos</li>
+          <li>Fundamentos de Eletricidade</li>
+          <li>Fundamentos de Sistemas Elétricos</li>
+          <li>Criatividade e Ideação em Projetos de Inovação</li>
+          <li>Introdução à Tecnologia da Informação e Comunicação</li>
+          <li>Saúde e Segurança no Trabalho</li>
+          <li>Projetos Elétricos Prediais</li>
+          <li>Instalação e Manutenção Elétrica Predial</li>
+          <li>Fundamentos de Mecânica</li>
+          <li>Introdução à Indústria 4.0</li>
+          <li>Introdução à Qualidade e Produtiviade</li>
+          <li>Introdução ao Desenvolvimento de Projetos</li>
+          <li>Instalações e Acionamentos Elétricos Industriais</li>
+          <li>Manutenção Elétrica Industrial</li>
+          <li>Integração de Sistemas Elétricos Automatizados</li>
+          <li>Projetos Elétricos Industriais</li>
+          <li>Prototipagem de Negócios Inovadores</li>
+          <li>Sustentabilidade nos Processos Industriais</li>
+          <li>Eficiência Energética</li>
+          <li>Instalações de Sistemas Elétricos de Potência</li>
+          <li>Manutenção e Operação de Sistemas Elétricos de Potência</li>
+          <li>Projetos de Instalações Elétricas de Potência</li>
+          <li>Integração de Sistemas de Energias Renováveis</li>
+          <li>Gestão Operacional Integrada</li>
+          <li>Implementação de Negócios Inovadores</li>
+        </section>
+      </section>
     </main>
     <footer class="pd-sides">
       <section id="footer-wrapper">

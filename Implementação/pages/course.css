@@ -1,0 +1,118 @@
+#course-info-header {
+    position: sticky;
+    background-color: #46bed6;
+    z-index: 2;
+    top: 3.5rem;
+    width: 100%;
+    padding-block: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0 0 0 / 20%);
+}
+
+#course-title {
+    display: inline-block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    padding-inline: 2rem;
+}
+
+#header-back, #header-fav {
+    display: inline-block;
+    height: 1.5rem;
+}
+
+#header-back svg, #header-fav svg {
+    height: 1.5rem;
+}
+
+#course-image {
+    margin-block: 1rem;
+    max-height: 11rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 3px 2px rgba(0 0 0 / 30%);
+}
+
+#course-image img {
+    background-color: gray;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mg-sides {
+    margin-inline: 1.5rem;
+}
+
+#course-info {
+    background-color: white;
+    border-radius: 1rem;
+    padding-block: 1.5rem;
+    box-shadow: 0 0 4px 2px rgba(0 0 0 / 10%);
+}
+
+#course-info h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+
+.spread-list {
+    list-style: none;
+    padding-inline: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.spread-list li{
+    display: flex;
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+#price-info {
+    border-radius: 2rem;
+    border: 0.1rem solid rgba(0 0 0 / 70%);
+    padding: 1.2rem 2em;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+}
+
+#course-details p {
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+#course-details h2 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: 0 0 6px 0px rgba(0 0 0 / 20%);
+    margin-bottom: 2rem;
+}
+
+#course-details h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+}
+
+#course-details section {
+    padding-block: 1em;
+    border-bottom: 0.1rem solid rgba(0 0 0 / 30%);
+    margin-bottom: 1.5em;
+}
+
+#course-details section ul {
+    margin-left: 1em;
+}
+
+#course-details li {
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
