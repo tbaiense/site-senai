@@ -1,14 +1,20 @@
 #course-info-header {
-    position: fixed;
+    position: sticky;
     background-color: #46bed6;
     z-index: 2;
-    top: 3.45rem;
+    top: 3.5rem;
     width: 100%;
+    box-shadow: 0 2px 4px #00000033;
+
+}
+
+#course-info-header > .wide-wrapper {
+    height: 2.7rem;
     padding-block: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0 0 0 / 20%);
+    margin-inline: auto;
 }
 
 #course-info-header a {
@@ -21,6 +27,7 @@
     flex-shrink: 1;
     text-align: center;
     padding-inline: 2rem;
+    font-size: 1.1rem;
 }
 
 #header-back, #header-fav {
@@ -32,12 +39,22 @@
     height: 1.5rem;
 }
 
+#course-info {
+    grid-area: info;
+}
+
+#course-image-wrapper {
+    grid-area: img;
+}
 #course-image {
     margin-block: 1rem;
-    max-height: 11rem;
+    max-height: 13rem;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 3px 2px rgba(0 0 0 / 30%);
+    margin-inline: auto;
+    max-width: 30rem;
+    margin-inline: auto;
 }
 
 #course-image img {
@@ -51,11 +68,17 @@
     margin-inline: 1.5rem;
 }
 
+#info-wrapper {
+    grid-area: info;
+}
+
 #course-info {
     background-color: white;
     border-radius: 1rem;
     padding-block: 1.5rem;
     box-shadow: 0 0 4px 2px rgba(0 0 0 / 10%);
+    max-width: 25.5rem;
+    margin-inline: auto;
 }
 
 #course-info h2 {
@@ -85,6 +108,11 @@
     vertical-align: middle;
     font-size: 1.3rem;
     line-height: 1.3em;
+}
+
+#course-details {
+    grid-area: detail;
+    margin-inline: auto;
 }
 
 #course-details p {
@@ -119,4 +147,59 @@
 #course-details li {
     line-height: 1.2em;
     margin-bottom: 1em;
+}
+
+@media screen and (min-width: 50rem) {
+    main {
+        padding-top: 1rem;
+    }
+
+    #course-info-header {
+        max-width: 70rem;
+        margin-inline: auto;
+        border-radius: 0.4rem;
+    }
+
+    .wide-wrapper {
+        margin-inline: 2rem;
+    }
+
+    #course-info-wrapper {
+        max-width: 70rem;
+        margin-top: 1rem;
+        margin-inline: auto;
+        display: grid;
+        grid-template-areas: 
+            "img info"
+            "detail info";
+    }
+
+    #course-info-wrapper > *{
+        margin-inline: 0;
+        padding-inline: 0;
+    }
+
+    #course-info {
+        min-width: 20rem;
+        margin-inline: 2rem 2rem;
+    }
+
+    #course-image {
+        aspect-ratio: 16/9;
+        margin-block: 0;
+        margin-bottom: 1rem;
+        margin-inline: auto;
+        max-width: 40rem;
+        max-height: 20rem;
+    }
+
+    #course-image-wrapper {
+        padding-left: 2rem;
+    }
+
+    #course-info-wrapper .side {
+        max-width: 40rem;
+        margin-inline: auto;
+        padding-left: 2rem;
+    }
 }
