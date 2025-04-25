@@ -1,5 +1,5 @@
 #course-info-header {
-    position: sticky;
+    position: fixed;
     background-color: #46bed6;
     z-index: 2;
     top: 3.45rem;
