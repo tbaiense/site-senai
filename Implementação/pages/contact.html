@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/components/header.css">
     <script src="/components/header.js"></script>
     <link rel="stylesheet" href="/components/footer.css">
-    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="contact.css">
   </head>
   <body>
     <header id="main-header">
@@ -44,8 +44,52 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="pd-sides">
+      <section id="contact-info">
+        <h2>Canais de contato</h2>
+        <section>
+          <h3>Telefone</h3>
+          <p>0800 102 0880</p>
+        </section>
+        <section>
+          <h3>WhatsApp</h3>
+          <p>(27) 99841-2270</p>
+        </section>
+      </section>
 
+      <section id="get-in-touch">
+        <h2>Fale conosco</h2>
+        <p>Insira seus dados de contato nos campos a seguir para que a equipe de atendimento ao cliente possa sanar suas dúvidas, instruí-lo a respeito do processo de matrícula ou informá-lo de novas vagas.</p>
+        <form action="/mensagem" method="post">
+          <label for="nome">
+            Nome
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+          </label>
+          <label for="email">
+            Email
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          </label>
+          <label for="assunto">
+            <select id="assunto" name="assunto" required>
+              <option value="duvida">Dúvida</option>
+              <option value="matricula">Matrícula em curso</option>
+              <option value="reclamacao">Reclamação</option>
+            </select>
+          </label>
+          <label for="curso">
+            Curso
+            <select id="curso" name="curso" disabled>
+              <option>N/A</option>
+              <option value="tec-eletrotecnica">Técnico em Eletrotécnica</option>
+            </select>
+          </label>
+          <label for="mensagem-adic">
+            Mensagem adicional
+            <textarea id="mensagem-adic"></textarea>
+          </label>
+          <button type="submit" class="btn rounded">Enviar mensagem</button>
+        </form>
+      </section>
     </main>
     <footer class="pd-sides">
       <section id="footer-wrapper">

@@ -1,0 +1,45 @@
+h2 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+} 
+
+main {
+    padding-block: 1.5rem;
+}
+
+main > section {
+    margin-bottom: 1rem;
+}
+
+#get-in-touch p {
+    text-align: justify;
+}
+
+#get-in-touch form {
+    display: flex;
+    flex-direction: column;
+    margin-block: 1rem;
+    max-width: 100%;
+}
+
+#nome, #email, #curso, #mensagem-adic, #assunto {
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.8em;
+    margin-block: 0.3em 1em;
+    box-shadow: 
+        0 1px 4px 0px rgba(0 0 0 / 10%);
+}
+
+#mensagem-adic {
+    resize: none;
+    min-height: 8lh;
+}
+
+main #get-in-touch button.rounded {
+    border-radius: 0.3rem;
+}
