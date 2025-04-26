@@ -1,0 +1,46 @@
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding-block: 3rem;
+}
+
+#login-form .wrapper {
+    padding: 2rem 2rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 25rem;
+}
+
+#login-form form {
+    display: flex;
+    flex-direction: column;
+    margin-block: 1rem;
+    max-width: 100%;
+}
+
+#login-form h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#email, #password{
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.8em;
+    margin-block: 0.3em 1em;
+    box-shadow: 
+        0 1px 4px 0px rgba(0 0 0 / 30%);
+}
+
+main #login-form button.rounded {
+    border-radius: 0.3rem;
+}
