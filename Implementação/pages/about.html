@@ -2,11 +2,159 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/components/header.css">
+    <script src="/components/header.js"></script>
+    <link rel="stylesheet" href="/components/footer.css">
+    <link rel="stylesheet" href="about.css">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const parag = document.querySelector('#contractable-parag');
+        document.querySelector('#expand-btn').addEventListener('click', () => {
+          parag.classList.toggle('contracted');
+          location.assign('#history-title');
+        });
+      });
+    </script>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header id="main-header">
+      <div class="wide-wrapper pd-sides">
+        <div id="logo-container">
+            <a href="/">
+                <span id="logo-btn"></span>
+            </a>
+        </div>
+        <nav id="header-nav" class="mobile">
+            <ul class="pd-sides">
+                <li><a href="/index.html">INÍCIO</a></li>
+                <li><a href="/pages/contact.html">ATENDIMENTO</a></li>
+                <li><a href="/pages/about.html" class="active">QUEM SOMOS</a></li>
+            </ul>
+        </nav>
+        <div id="header-items">
+            <section id="header-controls">
+                <form id="search-widget" action="/buscar" method="GET">
+                    <input type="search" id="buscar" placeholder="Pesquisar..." />
+                    <button type="submit">🔎</button>
+                </form>
+                <section id="account-button" class="btn">
+                  <a href="/pages/login.html">
+                      <img src="/resources/account-icon.svg">
+                  </a>
+              </section>
+                <section id="header-hamb-menu" class="btn">
+                    <img src="/resources/Hamburger.svg">
+                </section>
+            </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about-info"  class="pd-sides">
+        <h2 class="center">Sobre o SENAI</h2>
+        <p>
+          O SENAI segue sua missão de qualificar profissionais para a indústria, oferecendo cursos, consultorias e serviços que atendem às demandas de um mercado em constante evolução.<br><br>
+          Conheça abaixo a trajetória do Serviço Nacional da Indústria, o principal responsável pela capacitação profissional para a indústria no Brasil.
+        </p>
+      </section>
+
+      <section id="history-and-timeline" class="pd-sides">
+        <div class="wrapper">
+          <h2 id="history-title">História e evolução</h2>  
+          <div>
+            <p id="contractable-parag" class="contracted">
+              O Senai surgiu no Espírito Santo em 25 de março de 1952.
+
+              A primeira escola funcionou em um galpão cedido pela CVRD (hoje Vale). A primeira escola, chamada Pedro Nolasco, oferecia cursos de marcenaria e mecânica, em Cariacica. Nos anos seguintes, o Senai se expandiu para atender às necessidades da indústria ferroviária, incorporando a Escola Ferroviária João Neiva.
+              
+              Em 1964, foi inaugurado o Centro Jerônimo Monteiro em Vitória, com equipamentos modernos e alta concorrência pelas vagas. A expansão continuou nas décadas de 1970 e 1980, com novos centros de formação em Cachoeiro de Itapemirim, Linhares, Serra, Colatina e Vila Velha.
+              
+              Com o tempo, o Senai se tornou uma referência em educação profissional, firmando parcerias estratégicas com grandes empresas e expandindo seu alcance para novos setores, como Automação, Construção Civil, Tecnologia da Informação, entre outros. Para garantir o acesso em todo o estado, também investiu em unidades móveis equipadas para atender diferentes áreas da indústria.
+              
+              A inovação nunca parou! Nos últimos anos, o Senai lançou iniciativas como o Findeslab, um hub de inovação, o novo Instituto Senai de Tecnologia, e a Academia de Segurança Cibernética. E para facilitar ainda mais o acesso à educação, os cursos técnicos ganharam um formato híbrido, com 80% online e 20% presencial.
+              
+              Hoje, o Senai ES segue sua missão de qualificar profissionais para a indústria, oferecendo cursos, consultorias e serviços que atendem às demandas de um mercado em constante evolução.
+            </p>
+          </div>
+          <button type="button" id="expand-btn">Expandir</button>
+          <section class="timeline-period">
+            <h3 class="year"><time datetime="1938">1938</time></h3>
+            <p>
+              Em 1938 a Confederação Nacional da Indústria (CNI) é fundada a partir da fusão da Confederação Industrial do Brasil (CIB) com diversas representações sindicais patronais em todo o Brasil.
+            </p>
+          </section>
+          <section class="timeline-period">
+            <h3 class="year"><time datetime="1970">1970</time></h3>
+            <p>
+              Em 1970, com a chegada de grandes projetos, como CST (Companhia Siderúrgica de Tubarão), Samarco e Aracruz Celulose demandaram grande expansão do Senai para atender às demandas industriais. Com o propósito de sempre oferecer serviços inovadores e diferenciados para os alunos e indústrias, o Senai iniciava com unidades móveis com laboratórios transportáveis.          </p>
+          </section>
+          <section class="timeline-period">
+            <h3 class="year"><time datetime="1980">1980</time></h3>
+            <p>
+              Em 1980 o SENA! expande sua atuação para além da indústria extrativa e começa a oferecer soluções em diversos setores da indústria capixaba. Além da Grande Vitória e interior, o SENAI investe em unidades móveis como a frigorífica e a escola móvel de mecânica veicular. E posteriormente alcança todo o estado atendendo ás áreas industriais de: Alimentos e Bebidas, Automotiva, Automação, Construção Civil, Couro e Calçado, Gestão, Gráfica, Metalmecânica, Eletroeletrônica, Refrigeração e Climatização, Tecnologia da InformaçãMadeira e Mobiliário, Meio Ambiente, Minerais não-metálicos, Petróleo e Gás, Polímeros, Segurança no Trabalho e Têxtil e Vestuário.          </p>
+          </section>
+          <section class="timeline-period">
+            <h3 class="year"><time datetime="2020">2020</time></h3>
+            <p>
+              Em 2020 é inaugurado o novo espaço do Instituto Senai de Tecnologia, no SENAI Vitória. No mesmo ano os cursos técnicos do SENAI passaram a contar com um novo formato: EaD com prática. Na habilitação técnica, os cursos têm 80º/o da carga on-line e 20%, presencial. Além disso, também em 2020, o SENAI ganhou uma Academia de Segurança Cibernético. Os equipamentos e sistemas disponibilizados nas unidades do Senai formam um ambiente seguro para realização de competições cibernéticas, palestras, consultorias e cursos.          </p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="pd-sides">
+      <section id="footer-wrapper">
+        <section id="footer-banner">
+          <img src="/resources/Logo-SENAI.svg">
+        </section>
+        <div id="footer-content-wrapper">
+          <section id="footer-content-container">
+  
+            <section class="footer-content">
+              <div class="title-container">
+                <h2 class="title">Acesso Rápido</h2>
+              </div>
+              <ul class="">
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Unidades</a></li>
+              </ul>
+            </section>
+            <section class="footer-content">
+              <div class="title-container">
+              <h2 class="title">Cursos Oferecidos</h2>
+              </div>
+              <ul class="">
+                <li><a href="#">Elétrica</a></li>
+                <li><a href="#">Eletrônica</a></li>
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Mecânica Automotiva</a></li>
+                <li><a href="#">Mecânica Industrial</a></li>
+              </ul>
+            </section>
+            <section class="footer-content">
+              <div class="title-container">
+                <h2 class="title">SAC</h2>
+              </div>
+              <ul class="">
+                <li>Telefone: 0800-100-0880</li>
+                <li>WhatsApp: 27 99841-2270</li>
+                <li></li>
+              </ul>
+            </section>
+  
+          </section>
+        </div>
+      </section>
+      <section id="footer-copyright">
+        <span>© 2025 SENAI</span>
+        <span>Desenvolvido por Thiago Moura Baiense</span>
+        <span>Todos os direitos livres HUEHUEBRBR</span>
+      </section>
+    </footer>
   </body>
 </html>

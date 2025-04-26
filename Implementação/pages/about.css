@@ -1,0 +1,96 @@
+main h2 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+} 
+
+main {
+    padding-block: 1.5rem;
+}
+
+main > section {
+    margin-bottom: 1rem;
+}
+
+#about-info {
+    max-width: 40rem;
+    margin-inline: auto;
+}
+
+#history-and-timeline .wrapper {
+    max-width: 37rem;
+    margin-inline: auto;
+}
+
+#history-title {
+    padding-bottom: 0.4em;
+    border-bottom: 0.1rem solid white;
+}
+
+#history-and-timeline {
+    background-image: url("/resources/history-bg.jpg");
+    color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding-block: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+main p {
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+#expand-btn {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0 0 0 / 40%);
+    padding-block: 0.7em;
+    margin-bottom: 2rem;
+    border-radius: 0 0 1em 1em;
+}
+
+button#expand-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0 0 0 / 30%);
+}
+
+.timeline-period h3 {
+    max-width: max-content;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-block: 1rem 0.5rem;
+    color: white;
+    background-color: #46BED6; 
+    padding: 0.3em 1em 0.3em 0.5em;
+    border-top-right-radius: 1em;
+}
+
+#contractable-parag {
+    white-space: pre-line;
+}
+
+.contracted {
+    max-height: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 40rem) {
+
+    body main.pd-sides {
+        padding-top: 2rem;
+        padding-inline: 2rem;
+    }
+}
