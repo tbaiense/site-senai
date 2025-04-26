@@ -12,6 +12,16 @@ main > section {
     margin-bottom: 1rem;
 }
 
+#yt-video iframe{
+    aspect-ratio: 112/63;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0 0 0 / 40%);
+    width: 100%;
+    margin-inline: auto;
+}
+
 #about-info {
     max-width: 40rem;
     margin-inline: auto;
