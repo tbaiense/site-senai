@@ -11,6 +11,40 @@
     <script src="/components/header.js"></script>
     <link rel="stylesheet" href="/components/footer.css">
     <link rel="stylesheet" href="contact.css">
+    <script src="/js/check-login.js" defer></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const assunto = document.getElementById('assunto');
+        const labelCurso = document.getElementById('lbl-curso');
+        const curso = document.getElementById('curso');
+
+        if (assunto.value == 'matricula') {
+          labelCurso.hidden = false;
+        } else {
+          labelCurso.hidden = true;
+        }
+        
+        assunto.addEventListener('change', () => {
+          if (assunto.value == 'matricula') {
+            labelCurso.hidden = false;
+            curso.disabled = false;
+          } else {
+            labelCurso.hidden = true;
+            curso.disabled = true;
+
+          }
+        })
+
+        const matricula = new URLSearchParams(document.location.search).get('solicitar-matricula');
+
+        if (matricula) {
+          assunto.value = 'matricula';
+          curso.value = matricula;
+        }
+      });
+    </script>
+
   </head>
   <body>
     <header id="main-header">
@@ -89,10 +123,9 @@
               <option value="reclamacao">Reclamação</option>
             </select>
           </label>
-          <label for="curso">
+          <label for="curso" id="lbl-curso" hidden>
             Curso
             <select id="curso" name="curso" disabled>
-              <option>N/A</option>
               <option value="tec-eletrotecnica">Técnico em Eletrotécnica</option>
             </select>
           </label>

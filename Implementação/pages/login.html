@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <title></title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -10,6 +11,7 @@
     <script src="/components/header.js"></script>
     <link rel="stylesheet" href="/components/footer.css">
     <link rel="stylesheet" href="login.css">
+    <script src="/js/check-login.js" defer></script>
   </head>
   <body>
     <header id="main-header">
@@ -48,7 +50,7 @@
         <section id="login-form" class="wide-wrapper">
           <div class="wrapper">
             <h2>Login</h2>
-            <form action="/mensagem" method="post">
+            <form action="http://api.site-senai.local:3000/login" method="post">
               <label for="email">
                 Email
                 <input type="email" id="email" name="email" placeholder="seu@email.com" required>

@@ -1,4 +1,5 @@
 import postMessage from './post-message.js';
+import login from './login.js';
 
 function router(req, res) {
     const method = req.method;
@@ -21,7 +22,9 @@ function router(req, res) {
             break;
         };
         case '/login': {
-            res.end();
+            if (method == 'POST' && contentType == 'application/x-www-form-urlencoded') {
+                login(req, res);
+            }
             break;
         };
         default: {
