@@ -1,0 +1,16 @@
+{
+  "name": "senai-back-end",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Servidor de back-end do exercício sobre o site do SENAI",
+  "main": "main.js",
+  "scripts": {
+    "server": "node main.js"
+  },
+  "keywords": [],
+  "author": "Thiago M. Baiense",
+  "license": "ISC",
+  "dependencies": {
+    "@mysql/xdevapi": "^8.0.35"
+  }
+}
