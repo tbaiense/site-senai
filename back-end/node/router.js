@@ -24,6 +24,9 @@ function router(req, res) {
         case '/login': {
             if (method == 'POST' && contentType == 'application/x-www-form-urlencoded') {
                 login(req, res);
+            } else {
+                res.statusCode = 400;
+                res.end();
             }
             break;
         };
